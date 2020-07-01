@@ -1,0 +1,39 @@
+{
+  "type": "datasource",
+  "name": "srclosson-github-datasource",
+  "id": "svclos-net-srclosson-github-datasource",
+  "metrics": true,
+  "backend": true,
+  "executable": "gpx_srclosson-github-datasource",
+  "info": {
+    "description": "Github Datasource based on NodeJS Backend and OctoKit",
+    "author": {
+      "name": "Stephanie Closson",
+      "url": "https://svclos.net"
+    },
+    "keywords": [
+      "github"
+    ],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/simple-datasource-backend"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/simple-datasource-backend/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaVersion": "7.x.x",
+    "plugins": []
+  }
+}

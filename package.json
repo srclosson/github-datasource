@@ -1,0 +1,28 @@
+{
+  "name": "svclos-net-srclosson-github-datasource",
+  "version": "1.0.0",
+  "description": "Github Datasource based on NodeJS Backend and OctoKit",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev && yarn backend",
+    "backend": "./node_modules/@grafana/tsbackend/bin/grafana-tsbackend gpx_srclosson-github-datasource_darwin_amd64",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "author": "Stephanie Closson",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@grafana/data": "next",
+    "@grafana/tsbackend": "link:/Users/stephanie/src/grafana-tsbackend",
+    "@grafana/toolkit": "next",
+    "@grafana/runtime": "next",
+    "@grafana/ui": "next",
+    "@types/lodash": "latest",
+    "grpc": "^1.24.3",
+    "google-protobuf": "^3.12.2",
+    "@octokit/rest": "^18.0.0"
+  },
+  "engines": {
+    "node": ">=12 <13"
+  }
+}
